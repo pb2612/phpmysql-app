@@ -1,4 +1,10 @@
 node{
+pipeline {
+
+    environment {
+        PATH = "$PATH:/var/lib/jenkins/workspace/shopping"
+    }
+}
 
     stage('SCM Checkout')
     {
